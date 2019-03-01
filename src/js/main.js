@@ -8,7 +8,7 @@ const search = document.getElementById('search');
 const searchData = document.getElementById('search-data');
 const inputSearch = document.getElementById('input-search');
 const index = document.getElementById('index')
-const director = document.getElementById('director');
+const director = document.getElementById('director-search');
 const category = document.getElementById('category')
 let kinema = [];
 
@@ -33,13 +33,7 @@ const printFilms = (dataCinema) => {
     let infoCine = `<div class="casilla">
      <h6>${element.Title}</h6>
      <img src="${element.Poster}" class="img-Poster">
-     <p>Genre: ${genre}</p>
-     <p>Year: ${element.Year}</p>
-     <p>Director: ${element.Director}</p>
-     <p>Plot: ${element.Plot}</p>
-     <p>Actors: ${element.Actors}</p>
-     <p>Tipos: ${element.Type}</p>
-     <p>Country: ${element.Country}</p></button>`;
+     `;
    dataMovies.insertAdjacentHTML("beforeend", infoCine);
   });
 };
@@ -48,7 +42,10 @@ for (let i = 0; i < buttonFilter.length; i++) {
   buttonFilter[i].addEventListener('click', () => {
     const typeGenre = buttonFilter[i].id;
     const movieFilter = window.data.dataFiltered(kinema, typeGenre)
+    dataMovies.innerHTML= "";
     printFilms(movieFilter)
+    dataMovies.classList.remove('hide');
+    category.classList.add('hide');
 
   })
 }
@@ -65,7 +62,7 @@ for( let i = 0; i < radioType.length; i++){
   radioType[i].addEventListener("click",()=>{
     if (radioType[i].checked === true){
       let radio = radioType[i].id;
-      alert("Holi" +radio)   
+      return radio;  
    }
   })
 
