@@ -29,6 +29,7 @@
             <article class="padding-10 fixed">
                 <h2>Search</h2>
                 <input type="search" name="" id="input-search" class="position-absolute">
+                <input type="search" id="director-search" class="position-absolute" placeholder=" Busca por Director">
                 <input type="radio" name="" value = "0" id="Director" class="radio-type position-absolute input-radio"><label id="radio-direc"
                     for="" class="position-absolute radio-name">Director</label>
                 <input type="radio" name="" value="1" id="Title" class="radio-type position-absolute input-radio"><label id="radio-title"
@@ -39,36 +40,34 @@
 
         </section>
         <section id="category" class="position-absolute hide">
-            <h2>Type:</h2>
-            <button id="movie" class="type"> MOVIE</button>
-            <button id="series" class="type">SERIES</button>
-            <input type="search" id="director" placeholder=" Busca por Director">
-            <h2>Género</h2>
-            <button id="Animation" class="boton-type-chart">Animation</button>
-            <button id="Action" class="boton-type-chart">Action</button>
-            <button id="Adventure" class="boton-type-chart"> Adventure</button>
-            <button id="Comedy" class="boton-type-chart">Comedy</button>
-            <button id="Family" class="boton-type-chart">Family</button>
-            <button id="Fantasy" class="boton-type-chart">Fantasy</button>
-            <button id="Musical" class="boton-type-chart">Musical</button>
-            <button id="Romance" class="boton-type-chart">Romance</button>
-            <button id="Sci-Fi" class="boton-type-chart">SciFi</button>
-            <button id="Thriller" class="boton-type-chart">Thriller</button>
-            <button id="Drama" class="boton-type-chart">Drama</button>
-            <button id="Horror" class="boton-type-chart">Horror</button>
-            <button id="Mystery" class="boton-type-chart">Mystery</button>
-            <button id="Comedy" class="boton-type-chart">Comedy</button>
-            <button id="Biography" class="boton-type-chart">Biography</button>
-            <button id="Romance" class="boton-type-chart">Romance</button>
-            <button id="Documentary" class="boton-type-chart">Documentary</button>
-            <button id="Short" class="boton-type-chart">Short</button>
-            <button id="Drama" class="boton-type-chart">Drama</button>
-            <button id="Crime" class="boton-type-chart">Crime</button>
+            <h3>Type:</h3>
+            <button id="movie" class="type btn-type"> MOVIE</button>
+            <button id="series" class="type btn-type">SERIES</button>
+            <h3>Género</h3>
+            <button id="Animation" class="boton-type-chart btn-category">Animation</button>
+            <button id="Action" class="boton-type-chart btn-category">Action</button>
+            <button id="Adventure" class="boton-type-chart btn-category"> Adventure</button>
+            <button id="Comedy" class="boton-type-chart btn-category">Comedy</button>
+            <button id="Family" class="boton-type-chart btn-category">Family</button>
+            <button id="Fantasy" class="boton-type-chart btn-category">Fantasy</button>
+            <button id="Musical" class="boton-type-chart btn-category">Musical</button>
+            <button id="Romance" class="boton-type-chart btn-category">Romance</button>
+            <button id="Sci-Fi" class="boton-type-chart btn-category">SciFi</button>
+            <button id="Thriller" class="boton-type-chart btn-category">Thriller</button>
+            <button id="Drama" class="boton-type-chart btn-category">Drama</button>
+            <button id="Horror" class="boton-type-chart btn-category">Horror</button>
+            <button id="Mystery" class="boton-type-chart btn-category">Mystery</button>
+            <button id="Comedy" class="boton-type-chart btn-category">Comedy</button>
+            <button id="Biography" class="boton-type-chart btn-category">Biography</button>
+            <button id="Romance" class="boton-type-chart btn-category">Romance</button>
+            <button id="Documentary" class="boton-type-chart btn-category">Documentary</button>
+            <button id="Short" class="boton-type-chart btn-category">Short</button>
+            <button id="Crime" class="boton-type-chart btn-category">Crime</button>
 
         </section>
 
 
-        <article id="data-movies" class="padding-80"></article>
+        <article id="data-movies" class="padding-80 hide"></article>
     </main>
     <footer class="fixed">
         <button id="home" class="btn-footer btn-home position-absolute">
